@@ -44,7 +44,7 @@ Este é o projeto "Turma do Café" da Fatec Araras. O programa gerencia uma comu
 
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/seu-usuario/turma-do-cafe.git
+    git clone https://github.com/PedNeto/turma-do-cafe.git
 
     cd turma-do-cafe
 
