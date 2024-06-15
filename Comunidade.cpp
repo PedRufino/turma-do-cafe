@@ -101,7 +101,8 @@ void abrir_garrafa(TurmaCafe* turma){
 ALUNO novo_participante(){
     ALUNO novoAluno;
     cout << "Nome do aluno: ";
-    cin >> novoAluno.nome;
+    cin.ignore();
+    getline(cin, novoAluno.nome);
     cout << "Curso do aluno: ";
     cin >> novoAluno.curso;
     while (novoAluno.curso != "DSM" && novoAluno.curso != "SI" &&  novoAluno.curso != "GE") {
@@ -161,9 +162,10 @@ void editar_participante(ALUNO* aluno){
 
     cout << "Deseja alterar o nome (s/n)? ";
     cin >> alterar;
+    cin.ignore();
     if (alterar == 's' || alterar == 'S') {
         cout << "Digite o nome[" << aluno->nome << "]: ";
-        cin >> nome;
+        getline(cin, nome);
         aluno->nome = (nome.empty()) ? aluno->nome : nome;
     }
 
